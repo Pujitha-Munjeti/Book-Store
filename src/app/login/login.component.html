@@ -1,0 +1,65 @@
+
+<div class="container-fluid" style="background-image: url(https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzN8fHxlbnwwfHx8&w=1000&q=80); background-repeat: no-repeat; background-size: cover;">
+    
+<div class="display-1">Online Book Store
+</div>
+<div class="col-md-8">
+<!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Login
+</button>-->
+<!-- Modal -->
+<!--div class="" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Login Options</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">-->
+  <form id="login" class="row g-2 p-3" #formRef="ngForm" (ngSubmit)="onSubmit(formRef)" >
+    <!-- radio -->
+    <!-- <div class="form-check col-6 mt-2">
+        <input class="form-check-input" type="radio" name="usertype" id="inlineRadio1" value="user" ngModel>
+        <label class="form-check-label" for="inlineRadio1">User</label>
+      </div>
+      <div class="form-check col-6 mt-2">
+        <input class="form-check-input" type="radio" name="usertype" id="inlineRadio2" value="admin" ngModel>
+        <label class="form-check-label" for="inlineRadio2">Admin</label>
+      </div>
+  -->
+    <div class="form-group col-12 mt-2">
+        <label for="inputAddress" class="form-label">Usename</label>
+        <input type="text" class="form-control" id="inputAddress" name="username" ngModel>
+    </div>
+    <div class="form-group col-12">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" name="password" ngModel>
+    </div>          
+ 
+
+    <div class="col-12 mb-1 text-center">
+        <button type="submit" class="btn btn-primary mt-3 px-5">Login</button><br>
+        <div class="display-6">OR</div>
+        <button type="button" class="btn btn-success mt-3 px-5">Register</button>
+    </div>
+</form>
+</div>
+
+<!--<div class="modal-footer" >
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button" (click)="regiser()">Register</button>
+                      </div>
+</div>-->
+
+
+<script>var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+   
+    myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+    })
+    </script>
+</div>
+
+
